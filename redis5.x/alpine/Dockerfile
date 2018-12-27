@@ -1,4 +1,4 @@
-FROM redis:5.0.0-alpine3.8
+FROM redis:5-alpine
 
 RUN deluser redis && addgroup -g 2198 -S redis && adduser -u 2198 -S -G redis redis && chown -R redis:redis /data
 
